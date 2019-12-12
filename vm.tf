@@ -22,7 +22,7 @@ resource "azurerm_subnet" "internal" {
 }
 
 resource "azurerm_network_interface" "network_interface" {
-  location = "${azurerm_virtual_network.main.location}"
+  location = "Central US"
   name = "test-nic"
   resource_group_name = "${azurerm_resource_group.res_grp.name}"
   ip_configuration {
