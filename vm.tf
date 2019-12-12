@@ -27,6 +27,7 @@ resource "azurerm_network_interface" "network_interface" {
   resource_group_name = "${azurerm_resource_group.res_grp.name}"
   ip_configuration {
     name = "test-config"
+    subnet_id = "${azurerm_subnet.internal.address_prefix}"
     private_ip_address_allocation = "dynamic"
   }
 }
