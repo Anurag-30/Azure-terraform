@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "res_grp" {
   name     = "mainResourceGroup"
-  location = "West US"
+  location = "Central US"
 
   tags = {
     environment = "test"
